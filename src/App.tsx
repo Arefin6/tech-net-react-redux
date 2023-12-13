@@ -1,28 +1,13 @@
-import {useSelector,useDispatch} from 'react-redux'
-import { RootState } from './redux/store'
-import { decrement, increment } from './redux/features/counter/counterSlice'
+import { Toaster } from './components/ui/Toaster';
+import MainLayout from './layouts/MainLayout';
+
 function App() {
-  const count = useSelector((state: RootState) => state.count.count)
-  const dispatch = useDispatch()
   return (
     <div>
-    <div>
-      <button
-        aria-label="Increment value"
-        onClick={() => dispatch(increment())}
-      >
-        Increment
-      </button>
-      <span>{count}</span>
-      <button
-        aria-label="Decrement value"
-        onClick={() => dispatch(decrement())}
-      >
-        Decrement
-      </button>
+      <Toaster />
+      <MainLayout />
     </div>
-  </div>
-  )
+  );
 }
 
-export default App
+export default App;
