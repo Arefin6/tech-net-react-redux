@@ -1,6 +1,6 @@
-import ProductReview from '@/components/ProductReview';
-import { Button } from '@/components/ui/button';
-import { IProduct } from '@/types/globalTypes';
+import ProductReview from '../components/ProductReview';
+import { Button } from '../components/ui/button';
+import { IProduct } from '../types/globalTypes';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 

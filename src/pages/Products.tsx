@@ -1,9 +1,9 @@
-import ProductCard from '@/components/ProductCard';
-import { Label } from '@/components/ui/label';
-import { Slider } from '@/components/ui/slider';
-import { Switch } from '@/components/ui/switch';
-import { useToast } from '@/components/ui/use-toast';
-import { IProduct } from '@/types/globalTypes';
+import ProductCard from '../components/ProductCard';
+import { Label } from '../components/ui/label';
+import { Slider } from '../components/ui/slider';
+import { Switch } from '../components/ui/switch';
+import { useToast } from '../components/ui/use-toast';
+import { IProduct } from '../types/globalTypes';
 import { useEffect, useState } from 'react';
 
 export default function Products() {
@@ -14,7 +14,7 @@ export default function Products() {
       .then((data) => setData(data));
   }, []);
 
-  const { toast } = useToast();
+  useToast();
 
   //! Dummy Data
 

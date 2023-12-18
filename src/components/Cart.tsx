@@ -12,7 +12,7 @@ import {
   HiOutlineTrash,
 } from 'react-icons/hi';
 import { Button } from './ui/button';
-import { IProduct } from '@/types/globalTypes';
+import { IProduct } from '../types/globalTypes';
 
 export default function Cart() {
   //! Dummy data
