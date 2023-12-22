@@ -19,7 +19,6 @@ export default function Cart() {
 
   const products: IProduct[] = [];
   const total = 0;
-
   //! **
 
   return (
